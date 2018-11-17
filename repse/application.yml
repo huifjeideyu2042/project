@@ -1,11 +1,13 @@
 server:
   port: 8000
-  
+spring:
+  application:
+    name: only-authority-springcloud-server
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/yly
     username: root
-    password: root        
+    password: root
 eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
