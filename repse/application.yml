@@ -15,3 +15,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka/
+mybatis:
+  type-aliases-package: only_authority_springcloud_server.entity
+  mapper-locations: classpath:mapper/**/*Mapper.xml
